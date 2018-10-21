@@ -72,6 +72,7 @@ def insert(H,k):
 
 # scivola sopra l'elemento
 def scivolaSu(H,i):
+    print("scivolaSu")
     if(i%2==1):
         padre=i//2
     else:
@@ -85,11 +86,43 @@ def scivolaSu(H,i):
         print(H)
         scivolaSu(H,padre)
 
+# scivola giu un elemento
+def scivolaGiu(H,i):
+    if(len(H)+1 < i ):
+        return
+    else:
+        m = getMaxSon(H,i)
+        if(H[i]<H[m]):
+            swap(H,i,m)
+            scivolaGiu(H,m)
 
+
+# ese 4.4
+def aumentaChiave(H,i,k):
+    print("aumentaChiave")
+    if(H[i]>=k):
+        return
+    else:
+        H[i]=k
+        scivolaSu(H,i)
+
+# ese 4.4
+def decrementaChiave(H,i,k):
+    print("decrementaChiave")
+    if(H[i]<=k):
+        return
+    else:
+        H[i]=k
+        scivolaGiu(H,i)
 
 
 A=[11,19,24,30,8,80,60,2,50]
 heapify(A,0)
-insert(A,100)
+
+#aumentaChiave(A,0,8)
+#decrementaChiave(A,1,1)
+print(A)
+
+#insert(A,100)
 
 #heapSort(A)
