@@ -63,12 +63,25 @@ def heapSort(A):
         X.append(getMaxHeap(A))
     print("FINE",X)
 
+# -----------------------------------
+# algoritmo insert(heap H,chiave k)
+#   n<- n+1
+#   aggiungi nuova foglia H[n] = k
+#   i <- n
+#   while (i>n and H[i/2] < H[i]) do
+#       scambia H[i/2] e H[i]
+#       i = i/2
+#---------COSTO (n log n)------------
+#
+# VANTAGGIOSO COSTRUIRE HEAP con insert ?  no , entrambi i modi si comportano al massimo come O(nlogn)
+#
 # inserisce un nuovo elemento in coda, e chiama scivolaSu
 def insert(H,k):
     H.append(k)
     print(H)
     scivolaSu(H,len(H)-1)
     print(H)
+
 
 # scivola sopra l'elemento
 def scivolaSu(H,i):
@@ -81,10 +94,10 @@ def scivolaSu(H,i):
         return
     print(H[i], H[padre], padre)
     if(H[i]>H[padre]):
-
         swap(H,i,padre)
         print(H)
         scivolaSu(H,padre)
+
 
 # scivola giu un elemento
 def scivolaGiu(H,i):
@@ -98,6 +111,7 @@ def scivolaGiu(H,i):
 
 
 # ese 4.4
+# tempo totale per 1 elemento O(logn) perche posso andare soltanto sopra nell'albero
 def aumentaChiave(H,i,k):
     print("aumentaChiave")
     if(H[i]>=k):
@@ -116,8 +130,8 @@ def decrementaChiave(H,i,k):
         scivolaGiu(H,i)
 
 
-A=[11,19,24,30,8,80,60,2,50]
-heapify(A,0)
+A=['s','a','n','t','o','p','a','d','r']
+heapSort(A)
 
 #aumentaChiave(A,0,8)
 #decrementaChiave(A,1,1)

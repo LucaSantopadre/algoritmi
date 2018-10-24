@@ -17,10 +17,10 @@ def ordinaBandiera1(A):
 
 
 def ordinaBandiera2(A):
-    fv=-1
-    ir=len(A)
-    i=0
-    f=len(A)-1
+    fv=-1       # fine verde
+    ir=len(A)   # inizio rosso
+    i=0         # indice scorrimento array
+    f=len(A)-1  # fine array
     while(i<len(A)-1):
         print("_______________________________________")
         if(A[i]=="v"):
@@ -36,6 +36,11 @@ def ordinaBandiera2(A):
                 print(A)
         print(A)
         i+=1
+
+"""
+    
+
+"""
 
 
 
