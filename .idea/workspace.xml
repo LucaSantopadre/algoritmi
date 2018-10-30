@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a840516d-8926-4aba-858b-830256074aa3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cap4_ordinamento/Bandiera.py" beforeDir="false" afterPath="$PROJECT_DIR$/cap4_ordinamento/Bandiera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cap4_ordinamento/HeapSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/cap4_ordinamento/HeapSort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cap4_ordinamento/QuickSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/cap4_ordinamento/QuickSort.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Algoritmi$Select.coverage" NAME="Select Coverage Results" MODIFIED="1540934879870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cap5_selezione" />
     <SUITE FILE_PATH="coverage/TetsProject$HeapSort.coverage" NAME="HeapSort Coverage Results" MODIFIED="1540051562083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algoritmi$HeapSort.coverage" NAME="HeapSort Coverage Results" MODIFIED="1540367471552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cap4_ordinamento" />
     <SUITE FILE_PATH="coverage/TetsProject$QuickSort.coverage" NAME="QuickSort Coverage Results" MODIFIED="1540026175263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -20,6 +20,20 @@
     <SUITE FILE_PATH="coverage/Algoritmi$HeapSort__1_.coverage" NAME="HeapSort (1) Coverage Results" MODIFIED="1540052669026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cap4_ordinamento" />
     <SUITE FILE_PATH="coverage/TetsProject$test.coverage" NAME="test Coverage Results" MODIFIED="1539848809233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algoritmi$Bandiera.coverage" NAME="Bandiera Coverage Results" MODIFIED="1540112653391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cap4_ordinamento" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="304239857">
@@ -58,54 +72,48 @@
     <session id="1569915769">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2041" />
+          <entry key="py" value="4307" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2041" />
+          <entry key="Python" value="4307" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="4" />
+          <entry key="py" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="4" />
+          <entry key="Python" value="9" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cap4_ordinamento/HeapSort.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cap4_ordinamento/Bandiera.py">
+        <entry file="file://$PROJECT_DIR$/cap5_selezione/Select.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+            <state relative-caret-position="221">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
-                <marker date="1540386330240" expanded="true" signature="75:949" ph="..." />
+                <marker date="1540934879853" expanded="true" signature="21:313" ph="..." />
+                <marker date="1540934879853" expanded="true" signature="329:334" ph="..." />
+                <marker date="1540934879853" expanded="true" signature="1187:1645" ph="..." />
+                <marker date="1540934879853" expanded="true" signature="1666:1671" ph="..." />
               </folding>
             </state>
           </provider>
@@ -132,6 +140,9 @@
         <option value="$PROJECT_DIR$/HeapSort.py" />
         <option value="$PROJECT_DIR$/cap4_ordinamento/HeapSort.py" />
         <option value="$PROJECT_DIR$/cap4_ordinamento/Bandiera.py" />
+        <option value="$PROJECT_DIR$/cap4_ordinamento/QuickSort.py" />
+        <option value="$PROJECT_DIR$/cap4_ordinamento/InsertionSort.py" />
+        <option value="$PROJECT_DIR$/cap5_selezione/Select.py" />
       </list>
     </option>
   </component>
@@ -144,14 +155,16 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="683" />
-    <option name="height" value="700" />
+    <option name="height" value="704" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,10 +177,16 @@
               <item name="Algoritmi" type="462c0819:PsiDirectoryNode" />
               <item name="cap4_ordinamento" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algoritmi" type="462c0819:PsiDirectoryNode" />
+              <item name="cap5_selezione" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,7 +211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HeapSort">
+  <component name="RunManager" selected="Python.Select">
     <configuration name="Bandiera" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algoritmi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,12 +256,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Select" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Algoritmi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cap5_selezione" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cap5_selezione/Select.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.HeapSort" />
       <item itemvalue="Python.Bandiera" />
+      <item itemvalue="Python.Select" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Select" />
         <item itemvalue="Python.HeapSort" />
         <item itemvalue="Python.Bandiera" />
       </list>
@@ -264,13 +307,13 @@
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="704" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15984848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1689394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40877193" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3951049" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39372823" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39372823" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -284,7 +327,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32954547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,14 +335,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="A[i]" language="Python" />
-        <watch expression="A[max]" language="Python" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
@@ -353,33 +388,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cap4_ordinamento/QuickSort.py">
+    <entry file="file://$PROJECT_DIR$/cap4_ordinamento/Bandiera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cap4_ordinamento/MergeSort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="600">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cap4_ordinamento/HeapSort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cap4_ordinamento/Bandiera.py">
+    <entry file="file://$PROJECT_DIR$/cap4_ordinamento/InsertionSort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        <state relative-caret-position="210">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4_ordinamento/QuickSort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap4_ordinamento/MergeSort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cap5_selezione/Select.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
-            <marker date="1540386330240" expanded="true" signature="75:949" ph="..." />
+            <marker date="1540934879853" expanded="true" signature="21:313" ph="..." />
+            <marker date="1540934879853" expanded="true" signature="329:334" ph="..." />
+            <marker date="1540934879853" expanded="true" signature="1187:1645" ph="..." />
+            <marker date="1540934879853" expanded="true" signature="1666:1671" ph="..." />
           </folding>
         </state>
       </provider>

@@ -8,10 +8,11 @@ def partition(A,i,f):
     y=f-1
     print(A,"pivot: ",pivot)
     while(True):
-        while (x<=f and pivot >= A[x]):
+        while (pivot >= A[x]  and x<=f):
             x += 1
-        while(pivot<A[y]):
+        while(pivot < A[y]):
             y -= 1
+
         if(x<y):
             A[x],A[y]=A[y],A[x]
         else:
