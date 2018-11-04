@@ -2,7 +2,7 @@ def insertionSort(A):
     for k in range(0,len(A)-1):
         x=A[k+1]
         j=k
-        while(j>0):
+        while(j>=0):
             if(j>0 and A[j]<=x): break
             j = j - 1
         if(j<k):
@@ -18,7 +18,7 @@ def insertionSort(A):
 def select(A,k):
     if(len(A)<=10):
         insertionSort(A)
-
+        print("Array ordinato: ",A)
         return(A[k])
     i=0
     x=0
@@ -50,8 +50,8 @@ def partition(A,M):
     IndexPart=[]
     print("______________partition_____________")
     while(True):
-        print(A,"    M:",M)
-        while (M >= A[x] and x <= len(A)-1):
+        print(A,"    M:",M," A[x]",A[x],"x",x)
+        while (M >= A[x] and x < len(A)-1):
             if(M==A[x]):
                 dist=dist+1
             x += 1
@@ -65,9 +65,11 @@ def partition(A,M):
     y=y+1
     IndexPart.append(x)
     IndexPart.append(y)
+    IndexPart.append(dist)
     print("partizioni create ...")
-    print("elementi minori di M   = ",A[:x] )
-    print("elementi maggiori di M = ",A[y:],"\n")
+    print("elementi minori uguali di M = ",A[:x] )
+    print("elementi maggiori di      M = ",A[y:],"\n")
+    print("num uguali al mediano:",dist)
     return IndexPart
 
 
@@ -97,8 +99,9 @@ def trovaMediano5(A):
 
 
 
-#X=[4,5,6,7,8,1,2,3,4,5,80,40,70,10,20,1,2,3,4,5,5,5,5,5,5]
-X=[1,2,3,4,5,10,20,30,40,50,12,13,14,15,16,100,110,120,130,140]
+X=[4,5,6,7,8,1,2,3,4,5,80,40,70,10,20,1,2,3,4,5,5,5,5,5,5]
+#X=[1,2,3,4,5,10,20,30,40,50,12,13,14,15,16,100,110,120,130,140]
 #X=[1,2,5,8,88,6,4,7,3,5]
-#partition(X,9)
-print("result: ",select(X,12))
+#partition(X,5)
+mediano=len(X)//2
+print("\n****************MEDIANO: ",select(X,mediano))
