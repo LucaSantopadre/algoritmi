@@ -69,12 +69,13 @@ if __name__ == "__main__":
         print('\n')
 
     runningTime = sortingTest(inputList, Sorting.quickSortIter, True)
-    print("quickSortIter-Det required {} seconds.".format(runningTime))
+    print("quickSortIter-Det required     {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sorting.quickSortIter)
-    print("quickSortIter-NonDet required {} seconds.".format(runningTime))
+    print("quickSortIter-NonDet required  {} seconds.".format(runningTime))
+
     runningTime = sortingTest(inputList, Sorting.quickSort, True)
-    print("quickSort(Rec)-Det required {} seconds.".format(runningTime))
+    print("quickSort(Rec)-Det required    {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sorting.quickSort)
     print("quickSort(Rec)-NonDet required {} seconds.".format(runningTime))
