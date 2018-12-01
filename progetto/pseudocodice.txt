@@ -1,0 +1,24 @@
+m/n volte
+
+
+algoritmo sampleMedianSelect(list, left, right, m) --->  int chiave
+
+    V = m elementi random da list[left:right]     O(m)
+
+    dict = {chiave : (CHIAVE,VALORE)}  memorizza CHIAVE e VALORE di V,
+            associando una relazione d'ordine totale su chiave                 O(m)
+
+    mid = medianDictInsertionSort(dict, m)    calcola il mediano di V e ritorna la chiave      O(m^2)
+
+    return mid
+
+
+# dict = { chiave : (CHIAVE, VALORE)}
+# dimensione massima dict = m
+algoritmo medianDictInsertionSort(dict, dim) ---> int chiave
+
+    insertionSort su VALORE         O(m^2)
+
+    calcola mediano di dict su chiave  mediano = (chiave = dim/2)      O(1)
+
+    return CHIAVE del mediano
