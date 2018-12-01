@@ -59,6 +59,7 @@ def medianDictInsertionSort(dict, dim):
 # QuickSort - RECURSIVE, deterministic and non-deterministic
 def quickSort(l):
     recursiveQuickSort(l, 0, len(l) - 1)
+    print(l)
 
 
 def recursiveQuickSort(l, left, right):

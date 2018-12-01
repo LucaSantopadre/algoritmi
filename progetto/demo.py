@@ -7,11 +7,20 @@ import progetto.quickSampleMedianSelect as Sort
 import lezioni_sorting.Sorting as Sorting
 
 
-# Esiste un modo migliore per passare un numero arbitrario di argomenti alle funzioni, ed un modo molto semplice per gestirli in fase di chiamata...!
-def sortingTest(inputList, sortingFunction):
-    l = list(inputList)  # copy the list. Equivalent to l=input[:].
+def sortingTest(*params):
+    l = list(params[0])  # copy the list. Equivalent to l=input[:].
+    numParams = len(params)
+    sortingFunction = params[1]
+
     start = time()
-    sortingFunction(l)
+
+    if numParams == 4:
+        sortingFunction(l, params[2], params[3])
+    elif numParams == 3:
+        sortingFunction(l, params[2])
+    else:
+        sortingFunction(l)
+
     # print(l)     # TO PRINT ORDERED LIST
     return time() - start
 
@@ -37,8 +46,12 @@ if __name__ == "__main__":
 
 
     print(inputList)
+
+    print("\n\n-------------- PROGETTO -------------------")
     runningTime = sortingTest(inputList, Sort.quickSort)
-    print("quickSort - sampleMedianSelect required {} seconds.".format(runningTime))
+    print("PROGETTO: quickSort with sampleMedianSelect required {} seconds.".format(runningTime))
+    print("-------------------------------------------\n\n")
+
 
 
 
@@ -55,13 +68,13 @@ if __name__ == "__main__":
 
         print('\n')
 
-    #runningTime = sortingTest(inputList, Sorting.quickSortIter, True)
-    #print("quickSortIter-Det required {} seconds.".format(runningTime))
+    runningTime = sortingTest(inputList, Sorting.quickSortIter, True)
+    print("quickSortIter-Det required {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sorting.quickSortIter)
     print("quickSortIter-NonDet required {} seconds.".format(runningTime))
-    #runningTime = sortingTest(inputList, Sorting.quickSort, True)
-    #print("quickSort(Rec)-Det required {} seconds.".format(runningTime))
+    runningTime = sortingTest(inputList, Sorting.quickSort, True)
+    print("quickSort(Rec)-Det required {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sorting.quickSort)
     print("quickSort(Rec)-NonDet required {} seconds.".format(runningTime))
@@ -72,9 +85,18 @@ if __name__ == "__main__":
     runningTime = sortingTest(inputList, Sorting.heapSort)
     print("heapSort required {} seconds.".format(runningTime))
 
+    print("\n\nradix")
 
-    """
-    @TODO radix
-    """
-
+    base = 400
+    runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
+    print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
+    base = 100
+    runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
+    print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
+    base = 10
+    runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
+    print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
+    base = 2
+    runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
+    print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
 
