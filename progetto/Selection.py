@@ -8,52 +8,38 @@ import progetto.Sorting as Sorting
 def sampleMedianSelect(A,left,right):
     m=5
 
-    # utilizzo lenA per generare il random
-    lenA = right-left+1
-    print(lenA)
+    # prendo sottoinsieme V di  num elementi <=m
+    numElements = m
+    while(numElements > right-left+1):
+        numElements -= 1
+    randIndex = random.sample(range(left,right+1),numElements)
 
-    # scelta random del sottoinsieme V di m elementi
-    if(lenA % m == 0):
-        numGroups = lenA//m
-    else:
-        numGroups = lenA//m + 1
-    print("........numero gruppi:",numGroups)
-    randIndex = random.randint(0,numGroups-1)
-    print("........indice random",randIndex)
-    """
-    # select last index of dimension <=m
-    lastIndex = (randIndex*m)+m - 1
-    while(lastIndex >= lenA):
-        lastIndex -= 1
-    """
-    B = {}
-    index=0
-    for i in range(left,right + 1):
-        B[index]=i,A[i]
-        index+=1
-    #print(B)
+    # memorizzo in un dizionario V in questo modo:
+    # applico una relezionde d'ordine sulla chiave del dizionario
+    # B = {chiave:(CHIAVE,valore)
+    B={}
+    for i in range(numElements):
+        B[i]=randIndex[i],A[randIndex[i]]
 
-    print("mediano da calcolare sU: ",l[randIndex*m:right + 1])
-    dimension = right - randIndex*m + 1
-    return medianDict(B,m,lenA)
-    #print(B)
+    # chiamo medianDict che restituisce:
+    # return CHIAVE    ,    calcola mediano su insieme dei "valore"
+    return medianDictInsertionSort(B, numElements)
+
 
 
 
 # procedura che restituisce la CHIAVE del mediano(calcolato per elemento)
 # dato in input un dizionario      chiave:(CHIAVE,elemento)
 # ed "ordinando" tramite algoritmo insertionSort
-def medianDict(dict,m,dimension):
-
-    #print("--------------- ORDINAMENTO TRAMITE INSERIONSORT . . .")
+def medianDictInsertionSort(dict, dim):
+    # INSERTIONSORT
+    # scorro le chiavi del dizionario che mi danno la relazione d'ordine
     for key in dict:
-        #print("chiave:",key,"valore:",dict[key],"DA ORDINARE:",dict[key][1])
-        for k in range(1, dimension):
+        for k in range(1, dim):
             valDict = dict[k]
 
             for pos in range(k):
                 if dict[pos][1] > valDict[1]:
-                    #print("dict[pos][1]>val",dict[pos][1],val)
                     break
             else:
                 pos = k  # This value for pos is just a flag to remember that from 0 to k, the list is already ordered
@@ -62,9 +48,8 @@ def medianDict(dict,m,dimension):
                 for j in range(k, pos, -1):
                     dict[j] = dict[j - 1]
                 dict[pos] = valDict
-    #print("FINE --------------- ORDINATO:",dict)
-    #print("MEDIANO  posizione:",dict[math.ceil((m-1)//2)][0]," valore:",dict[math.ceil((m-1)//2)][1])
-    return dict[math.ceil((dimension-1)//2)][0]
+    # return CHIAVE
+    return dict[math.ceil((dim - 1) // 2)][0]
 
 
 
@@ -73,7 +58,6 @@ def medianDict(dict,m,dimension):
 
 
 # QuickSort - RECURSIVE, deterministic and non-deterministic
-
 def quickSort(l):
     recursiveQuickSort(l, 0, len(l) - 1)
 
@@ -81,13 +65,8 @@ def quickSort(l):
 def recursiveQuickSort(l, left, right):
     if left >= right:
         return
-    print("LISTA QUICKSORT",l[left:right+1])
     mid = partition(l, left, right)
-    print("mediano",l[mid],"pos",mid)
-    print("DOPO PARTITION ",l)
-    print("----------------------------------------------------------------")
     recursiveQuickSort(l, left, mid - 1)
-    print("DESTRAAAA\n")
     recursiveQuickSort(l, mid + 1, right)
 
 
@@ -96,10 +75,8 @@ def partition(l, left, right):
     sup = right + 1
 
 
-
-
     mid = sampleMedianSelect(l,left,right)
-    l[left], l[mid] = l[mid], l[left]  # exchange first elem with the randomically chosen one
+    l[left], l[mid] = l[mid], l[left]  # exchange first elem with the selected from Algorithm sampleMedianSelect
 
 
     mid = left # the median is the first elem of the array
@@ -124,7 +101,8 @@ def partition(l, left, right):
 
 
 
-l=[1,20,3,4,5,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
-
+#l=[1,20,3,4,5,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
+l=[1,20,3,44,5,6,70,8,99,10,110,12,13,140,1555]
+l=[1,2444,3,-6]
 quickSort(l)
 print(l)
