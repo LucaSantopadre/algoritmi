@@ -28,8 +28,8 @@ def sortingTest(*params):
 if __name__ == "__main__":
     # Inizializzazione
     inputType = 0  # 1 crescente, -1 decrescente, 0 random
-    steps = 5000
-    slowAlgorithms = True
+    steps = 1000000
+    slowAlgorithms = False
 
     # crea lista
     inputList = [None] * steps

@@ -58,7 +58,7 @@ def medianDictInsertionSort(l, dim):
 # QuickSort - RICORSIVO
 def quickSort(l):
     recursiveQuickSort(l, 0, len(l) - 1)
-    print(l)
+    #print(l)
 
 
 def recursiveQuickSort(l, left, right):
@@ -101,8 +101,8 @@ def partition(l, left, right):
 
 
 
-l=[1,20,3,4,5,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
+#l=[1,20,3,4,5,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
 #l=[1,20,3,44,5,6,70,8,99,10,110,12,13,140,1555]
 #l=[1,2444,3,-6]
-quickSort(l)
+#quickSort(l)
 

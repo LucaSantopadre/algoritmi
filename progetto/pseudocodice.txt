@@ -1,19 +1,17 @@
 m/n volte
 
-
 algoritmo sampleMedianSelect(list, left, right, m) --->  int chiave
 
     V = m elementi random da list[left:right]     O(m)
 
-    dict = {chiave : (CHIAVE,VALORE)}  memorizza CHIAVE e VALORE di V,
-            associando una relazione d'ordine totale su chiave                 O(m)
+    lista = [(CHIAVE,valore),(CHIAVE,valore), ... ]   memorizza tutte le coppie CHIAVE/VALORE di V in m tuple,          O(m)
 
-    mid = medianDictInsertionSort(dict, m)    calcola il mediano di V e ritorna la chiave      O(m^2)
+    mid = medianDictInsertionSort(lista, m)    calcola il mediano di V e ritorna la CHIAVE      O(m^2)
 
     return mid
 
 
-# dict = { chiave : (CHIAVE, VALORE)}
+# lista = [(CHIAVE, VALORE)]
 # dimensione massima dict = m
 algoritmo medianDictInsertionSort(dict, dim) ---> int chiave
 
