@@ -1,10 +1,10 @@
 import random
 import math
-
+from lezioni_selection import Selection
 
 # Sceglie il pivot su cui partizionare
 def sampleMedianSelect(A,left,right):
-    m=5
+    m=7
 
     # prendo sottoinsieme V di  num elementi <=m
     numElements = m
@@ -47,7 +47,7 @@ def medianDictInsertionSort(l, dim):
     # FINE INSERTIONSORT ---------------
 
     # return CHIAVE
-    return l[math.ceil((dim - 1) // 2)][0]
+    return l[math.ceil((dim - 1) // 2)][1]
 
 
 
@@ -56,9 +56,10 @@ def medianDictInsertionSort(l, dim):
 
 
 # QuickSort - RICORSIVO
-def quickSort(l):
+def quickSortProject(l):
+    print("LISTA:",l)
     recursiveQuickSort(l, 0, len(l) - 1)
-    #print(l)
+    print(l)
 
 
 def recursiveQuickSort(l, left, right):
@@ -72,22 +73,46 @@ def recursiveQuickSort(l, left, right):
 # PARTITION modificata nella scelta del mediano tramite algoritmo sampleMedianSelect
 def partition(l, left, right):
     inf = left
-    sup = right + 1
+    sup = right
+
+    dim = right - left + 1
 
 
     mid = sampleMedianSelect(l,left,right)
-    l[left], l[mid] = l[mid], l[left]  # exchange first elem with the selected from Algorithm sampleMedianSelect
+    #mid = Selection.quickSelectRand(l[left:right+1],math.ceil(dim / 2))
+    # TROVARE LA CHIAVE DI MID!!!!
+    #print("mediano",mid)
+
+    """soluzione for
+    for i in range(left,right+1):
+        if(l[i]==x):
+            mid=i
+            break
+    """
 
 
-    mid = left # the median is the first elem of the array
+    #l[left], l[mid] = l[mid], l[left]  # exchange first elem with the selected from Algorithm sampleMedianSelect
 
+
+    #mid = left # the median is the first elem of the array
+    indexMid=None
     while True:
-        inf += 1
-        while inf <= right and l[inf] <= l[mid]:
+        #print(l[inf])
+        # boooooo
+        if(l[inf]==mid):
+            #print("TROVATO PIVOT, posizione",inf)
+            indexMid=inf
+            #print("trovato pos",inf,l[indexMid])
+
+
+        while inf < right and l[inf] <= mid:
+            if(l[inf]== mid):
+                indexMid = inf
+                #print("trovato pos", inf, l[indexMid])
             inf += 1
 
-        sup -= 1
-        while l[sup] > l[mid]:
+
+        while  l[sup] > mid:
             sup -= 1
 
         if inf < sup:
@@ -95,14 +120,20 @@ def partition(l, left, right):
         else:
             break
 
-    l[mid], l[sup] = l[sup], l[mid]
+    if(indexMid != None):
+        l[indexMid],l[sup]= l[sup],l[indexMid]
 
     return sup
 
 
 
-#l=[1,20,3,4,5,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
-#l=[1,20,3,44,5,6,70,8,99,10,110,12,13,140,1555]
-#l=[1,2444,3,-6]
-#quickSort(l)
+l=[1,20,3,4,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
+#l=[1,20,3,44,5,6,70,8,99,10,110,12,14,140,1555]
+#a=l
+#a.sort()
+#print(a)
+#l=[1,20,3,44,5,6,70,8,99,10,110,12,14,140,1555]
+#l=[1,2,3,4,5]
+#quickSortProject(l)
+
 

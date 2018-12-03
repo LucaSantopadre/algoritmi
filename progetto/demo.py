@@ -5,6 +5,7 @@ import random
 from sorting.__init__ import printSwitch
 import progetto.quickSampleMedianSelect as Sort
 import lezioni_sorting.Sorting as Sorting
+import math
 
 
 def sortingTest(*params):
@@ -26,10 +27,12 @@ def sortingTest(*params):
 
 
 if __name__ == "__main__":
-    # Inizializzazione
-    inputType = 0  # 1 crescente, -1 decrescente, 0 random
-    steps = 1000000
+    # Inizializzazione ----- SORT
+    inputType = -1  # 1 crescente, -1 decrescente, 0 random
+    steps = 10000
     slowAlgorithms = False
+
+
 
     # crea lista
     inputList = [None] * steps
@@ -48,7 +51,7 @@ if __name__ == "__main__":
     print(inputList)
 
     print("\n\n-------------- PROGETTO -------------------")
-    runningTime = sortingTest(inputList, Sort.quickSort)
+    runningTime = sortingTest(inputList, Sort.quickSortProject)
     print("PROGETTO: quickSort with sampleMedianSelect required {} seconds.".format(runningTime))
     print("-------------------------------------------\n\n")
 
@@ -86,6 +89,7 @@ if __name__ == "__main__":
     runningTime = sortingTest(inputList, Sorting.heapSort)
     print("heapSort required {} seconds.".format(runningTime))
 
+    """
     print("\n\nradix")
 
     base = 400
@@ -100,4 +104,5 @@ if __name__ == "__main__":
     base = 2
     runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
     print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
-
+    
+    """
