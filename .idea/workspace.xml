@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a840516d-8926-4aba-858b-830256074aa3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cap5_selezione/Select.py" beforeDir="false" afterPath="$PROJECT_DIR$/cap5_selezione/Select.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/progetto/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/progetto/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/progetto/pseudocodice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/progetto/pseudocodice.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/progetto/quickSampleMedianSelect.py" beforeDir="false" afterPath="$PROJECT_DIR$/progetto/quickSampleMedianSelect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ingegneria-algoritmi-2018/.idea/ingegneria-algoritmi-2018.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ingegneria-algoritmi-2018/.idea/ingegneria-algoritmi-2018.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ingegneria-algoritmi-2018/selection/Selection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ingegneria-algoritmi-2018/selection/Selection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ingegneria-algoritmi-2018/hash/plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ingegneria-algoritmi-2018/hash/plotter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +19,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Algoritmi$Select.coverage" NAME="Select Coverage Results" MODIFIED="1540976156636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cap5_selezione" />
     <SUITE FILE_PATH="coverage/Algoritmi$ordinamenti.coverage" NAME="ordinamenti Coverage Results" MODIFIED="1543480184654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/other" />
+    <SUITE FILE_PATH="coverage/Algoritmi$plotter.coverage" NAME="plotter Coverage Results" MODIFIED="1543874935450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progetto" />
     <SUITE FILE_PATH="coverage/TetsProject$HeapSort.coverage" NAME="HeapSort Coverage Results" MODIFIED="1540051562083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algoritmi$Selection.coverage" NAME="Selection Coverage Results" MODIFIED="1543480325217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ingegneria-algoritmi-2018/selection" />
     <SUITE FILE_PATH="coverage/TetsProject$MergeSort.coverage" NAME="MergeSort Coverage Results" MODIFIED="1539892488807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -23,10 +27,11 @@
     <SUITE FILE_PATH="coverage/Algoritmi$demoSorting.coverage" NAME="demoSorting Coverage Results" MODIFIED="1543677877071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../ingegneria-algoritmi-2018/sorting" />
     <SUITE FILE_PATH="coverage/Algoritmi$HeapSort.coverage" NAME="HeapSort Coverage Results" MODIFIED="1540367471552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cap4_ordinamento" />
     <SUITE FILE_PATH="coverage/TetsProject$QuickSort.coverage" NAME="QuickSort Coverage Results" MODIFIED="1540026175263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Algoritmi$demo.coverage" NAME="demo Coverage Results" MODIFIED="1543849959062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progetto" />
+    <SUITE FILE_PATH="coverage/Algoritmi$quickSampleMedianSelect.coverage" NAME="quickSampleMedianSelect Coverage Results" MODIFIED="1543874110751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progetto" />
+    <SUITE FILE_PATH="coverage/Algoritmi$demo.coverage" NAME="demo Coverage Results" MODIFIED="1543874480180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progetto" />
     <SUITE FILE_PATH="coverage/Algoritmi$HeapSort__1_.coverage" NAME="HeapSort (1) Coverage Results" MODIFIED="1540052669026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cap4_ordinamento" />
     <SUITE FILE_PATH="coverage/Algoritmi$Bandiera.coverage" NAME="Bandiera Coverage Results" MODIFIED="1540112653391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cap4_ordinamento" />
-    <SUITE FILE_PATH="coverage/Algoritmi$Selection__1_.coverage" NAME="Selection (1) Coverage Results" MODIFIED="1543848945528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progetto" />
+    <SUITE FILE_PATH="coverage/Algoritmi$Selection__1_.coverage" NAME="Selection (1) Coverage Results" MODIFIED="1543871447757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/progetto" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -117,48 +122,56 @@
     <session id="-406135132">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="4" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="csv" value="68" />
           <entry key="dummy" value="46" />
-          <entry key="py" value="4773" />
-          <entry key="txt" value="957" />
+          <entry key="py" value="7027" />
+          <entry key="txt" value="1594" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="1003" />
-          <entry key="Python" value="4773" />
+          <entry key="PLAIN_TEXT" value="1708" />
+          <entry key="Python" value="7027" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="18" />
-          <entry key="txt" value="1" />
+          <entry key="csv" value="4" />
+          <entry key="png" value="5" />
+          <entry key="py" value="27" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="18" />
+          <entry key="Image" value="5" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="27" />
         </counts>
       </usages-collector>
     </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Algoritmi" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/progetto/quickSampleMedianSelect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="125">
+              <caret line="56" column="50" lean-forward="true" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -167,19 +180,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lezioni_selection/Selection.py">
+        <entry file="file://$PROJECT_DIR$/progetto/demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-315" />
+            <state relative-caret-position="169">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <element signature="e#18#39#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/progetto/demo.py">
+        <entry file="file://$PROJECT_DIR$/progetto/pseudocodice.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+            <state relative-caret-position="65">
+              <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/progetto/plotter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="9" column="89" lean-forward="true" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
               <folding>
-                <element signature="e#18#39#0" expanded="true" />
+                <element signature="e#2#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,6 +225,8 @@
     <findStrings>
       <find>ceil</find>
       <find>indiciScelti</find>
+      <find>partition</find>
+      <find>ByValue</find>
     </findStrings>
     <replaceStrings>
       <replace>randIndex</replace>
@@ -224,9 +253,14 @@
         <option value="$PROJECT_DIR$/../ingegneria-algoritmi-2018/selection/Selection.py" />
         <option value="$PROJECT_DIR$/progetto/Sorting.py" />
         <option value="$PROJECT_DIR$/progetto/Selection.py" />
-        <option value="$PROJECT_DIR$/progetto/pseudocodice.txt" />
         <option value="$PROJECT_DIR$/lezioni_selection/demoSelection.py" />
+        <option value="$PROJECT_DIR$/lezioni_sorting/Sorting.py" />
+        <option value="$PROJECT_DIR$/lezioni_selection/Selection.py" />
+        <option value="$PROJECT_DIR$/progetto/pseudocodice.txt" />
+        <option value="$PROJECT_DIR$/../ingegneria-algoritmi-2018/hash/plotter.py" />
         <option value="$PROJECT_DIR$/progetto/demo.py" />
+        <option value="$PROJECT_DIR$/progetto/results/quickSampleMedianSelect.csv" />
+        <option value="$PROJECT_DIR$/progetto/plotter.py" />
         <option value="$PROJECT_DIR$/progetto/quickSampleMedianSelect.py" />
       </list>
     </option>
@@ -257,30 +291,6 @@
               <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
               <item name="algoritmi" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmi" type="462c0819:PsiDirectoryNode" />
-              <item name="lezioni_selection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmi" type="462c0819:PsiDirectoryNode" />
-              <item name="lezioni_sorting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmi" type="462c0819:PsiDirectoryNode" />
-              <item name="progetto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ingegneria-algoritmi-2018" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ingegneria-algoritmi-2018" type="462c0819:PsiDirectoryNode" />
-              <item name="sorting" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -292,15 +302,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/progetto" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cap4_ordinamento" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/progetto" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -315,51 +325,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demo">
-    <configuration name="Selection (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Algoritmi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/progetto" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/progetto/quickSampleMedianSelect.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Selection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ingegneria-algoritmi-2018" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ingegneria-algoritmi-2018/selection" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ingegneria-algoritmi-2018/selection/Selection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.plotter">
     <configuration name="demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algoritmi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -382,20 +348,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demoSorting" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ingegneria-algoritmi-2018" />
+    <configuration name="plotter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Algoritmi" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ingegneria-algoritmi-2018/sorting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/progetto" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ingegneria-algoritmi-2018/sorting/demoSorting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/progetto/plotter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -404,7 +370,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ordinamenti" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="quickSampleMedianSelect" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Algoritmi" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -412,12 +378,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/other" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/progetto" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/other/ordinamenti.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/progetto/quickSampleMedianSelect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -427,19 +393,15 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.ordinamenti" />
-      <item itemvalue="Python.Selection" />
-      <item itemvalue="Python.Selection (1)" />
       <item itemvalue="Python.demo" />
-      <item itemvalue="Python.demoSorting" />
+      <item itemvalue="Python.quickSampleMedianSelect" />
+      <item itemvalue="Python.plotter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plotter" />
         <item itemvalue="Python.demo" />
-        <item itemvalue="Python.Selection (1)" />
-        <item itemvalue="Python.demoSorting" />
-        <item itemvalue="Python.Selection" />
-        <item itemvalue="Python.ordinamenti" />
+        <item itemvalue="Python.quickSampleMedianSelect" />
       </list>
     </recent_temporary>
   </component>
@@ -456,29 +418,39 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-2" width="1924" height="1052" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19861555" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.21060605" />
+      <window_info id="Structure" order="1" sideWeight="0.5023585" side_tool="true" weight="0.21060605" />
+      <window_info id="Favorites" order="2" sideWeight="0.5023585" side_tool="true" weight="0.21060605" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32864866" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3718919" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.51891893" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32752612" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26132405" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5174216" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3292683" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.4172973" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007576" side_tool="true" weight="0.41463414" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3292683" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49924242" weight="0.41463414" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.4212121" />
       <window_info anchor="right" id="Database" order="4" weight="0.32954547" />
     </layout>
   </component>
@@ -495,6 +467,11 @@
           <url>file://$PROJECT_DIR$/other/ordinamenti.py</url>
           <line>10</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../ingegneria-algoritmi-2018/hash/plotter.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -632,20 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lezioni_sorting/Sorting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ingegneria-algoritmi-2018/sorting/demoRandom.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -670,22 +633,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/progetto/pseudocodice.txt">
+    <entry file="file://$PROJECT_DIR$/lezioni_selection/Selection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-start-column="9" selection-end-line="1" />
+        <state relative-caret-position="19">
+          <caret line="197" column="67" lean-forward="true" selection-start-line="197" selection-start-column="67" selection-end-line="197" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lezioni_selection/Selection.py">
+    <entry file="file://$PROJECT_DIR$/lezioni_sorting/Sorting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315" />
+        <state relative-caret-position="214">
+          <caret line="170" column="122" selection-start-line="170" selection-start-column="122" selection-end-line="170" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lezioni_sorting/Results/fast_no_heap.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lezioni_sorting/Results/all.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ingegneria-algoritmi-2018/hash/Results/binaryTree.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ingegneria-algoritmi-2018/hash/dictSearch.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ingegneria-algoritmi-2018/hash/plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#2#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ingegneria-algoritmi-2018/hash/Results/avl.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/progetto/results/result.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/progetto/results/quickSampleMedianSelect.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/progetto/plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="9" column="89" lean-forward="true" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
+          <folding>
+            <element signature="e#2#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/progetto/pseudocodice.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/progetto/demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        <state relative-caret-position="169">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="e#18#39#0" expanded="true" />
           </folding>
@@ -694,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/progetto/quickSampleMedianSelect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        <state relative-caret-position="125">
+          <caret line="56" column="50" lean-forward="true" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

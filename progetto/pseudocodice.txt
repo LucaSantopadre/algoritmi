@@ -1,22 +1,27 @@
-m/n volte
-
-algoritmo sampleMedianSelect(list, left, right, m) --->  int chiave
-
-    V = m elementi random da list[left:right]     O(m)
-
-    lista = [(CHIAVE,valore),(CHIAVE,valore), ... ]   memorizza tutte le coppie CHIAVE/VALORE di V in m tuple,          O(m)
-
-    mid = medianDictInsertionSort(lista, m)    calcola il mediano di V e ritorna la CHIAVE      O(m^2)
-
-    return mid
+algorithm sampleMedianSelect(list, left, right, m) --->  int elem
+    V = m random elements from  list[left:right]              O(m)
+    return mediano di V                                       O(?)  m ??
 
 
-# lista = [(CHIAVE, VALORE)]
-# dimensione massima dict = m
-algoritmo medianDictInsertionSort(dict, dim) ---> int chiave
+algorithm partitionByValue(list, left, right) ---> int key
+    inf = left
+    sup = right
 
-    insertionSort su VALORE         O(m^2)
+    pivot = select pivot from Select Algorithm
 
-    calcola mediano di dict su chiave  mediano = (chiave = dim/2)      O(1)
+    indexPivot = None
+    while(True) do
+        # scorro da sinista
+        while(inf < right and list[inf] <= pivot)
+            inf = inf + 1
+            if( A[inf] == pivot)  then   indexPivot = A[inf]   # Trovato indice pivot!
 
-    return CHIAVE del mediano
+        # scorro da destra
+        while(list[sup] > pivot)
+            sup = sup - 1
+
+         if(inf < sup)  then    scambia list[inf] e list[sup]
+         else break
+
+     if(indexPivot != None)   then   scambia list[indexPivot]  e list[sup]
+     return sup

@@ -29,7 +29,7 @@ def sortingTest(*params):
 if __name__ == "__main__":
     # Inizializzazione ----- SORT
     inputType = 0  # 1 crescente, -1 decrescente, 0 random
-    steps = 100000
+    steps = 1000000
     slowAlgorithms = False
 
 
