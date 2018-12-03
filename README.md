@@ -1,4 +1,4 @@
-# algoritmi
+# Algoritmi e strutture dati
 repository per materia di ingegneria informatica , ingegneria degli algoritmi
 
 ### Argomenti trattati
