@@ -1,7 +1,7 @@
 # algoritmi
 repository per materia di ingegneria informatica , ingegneria degli algoritmi
 
-Argomenti trattati:
+Argomenti trattati
 ordinamento
 selezione
 hashing
