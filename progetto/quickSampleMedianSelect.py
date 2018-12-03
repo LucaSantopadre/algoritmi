@@ -2,16 +2,25 @@ import random
 import math
 from lezioni_selection import Selection
 
+
 # Sceglie il pivot su cui partizionare
 def sampleMedianSelect(A,left,right):
-    m=7
-
+    m=5
     # prendo sottoinsieme V di  num elementi <=m
     numElements = m
     while(numElements > right-left+1):
         numElements -= 1
-    randIndex = random.sample(range(left,right+1),numElements)
+    C = random.sample(A[left:right+1],numElements)
 
+    return Selection.sortSelect(C,numElements//2)
+
+    """
+    # prendo sottoinsieme V di  num elementi <=m
+    numElements = m
+    while(numElements > right-left+1):
+        numElements -= 1
+
+    #randIndex = random.sample(range(left,right+1),numElements)
     # memorizzo V in questo modo:
     # B = [(CHIAVE,valore),(CHIAVE,valore), ... ]
     B=[None]*numElements
@@ -21,10 +30,10 @@ def sampleMedianSelect(A,left,right):
     # chiamo medianDict che restituisce:
     # calcolo il mediano sull'insieme dei valori e ne restituisco la CHIAVE
     return medianDictInsertionSort(B, numElements)
+    """
 
 
-
-
+# NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 # procedura che restituisce la CHIAVE del mediano
 # dato in input una lista DISordinata  l=[(CHIAVE,valore), (CHIAVE, valore), ... ]
 # ed "ORDINANDOLA" tramite algoritmo insertionSort visto a lezione e modificato per lavorare su questo tipo di struttura
@@ -65,9 +74,9 @@ def quickSortProject(l):
 def recursiveQuickSort(l, left, right):
     if left >= right:
         return
-    mid = partition(l, left, right)
-    recursiveQuickSort(l, left, mid - 1)
-    recursiveQuickSort(l, mid + 1, right)
+    pivot = partition(l, left, right)
+    recursiveQuickSort(l, left, pivot - 1)
+    recursiveQuickSort(l, pivot + 1, right)
 
 
 # PARTITION modificata nella scelta del mediano tramite algoritmo sampleMedianSelect
@@ -127,13 +136,13 @@ def partition(l, left, right):
 
 
 
-l=[1,20,3,4,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
+#l=[1,20,3,4,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
 #l=[1,20,3,44,5,6,70,8,99,10,110,12,14,140,1555]
 #a=l
 #a.sort()
 #print(a)
 #l=[1,20,3,44,5,6,70,8,99,10,110,12,14,140,1555]
-#l=[1,2,3,4,5]
-#quickSortProject(l)
+l=[1,2,3,4,5,6,6,6,3]
+quickSortProject(l)
 
 
