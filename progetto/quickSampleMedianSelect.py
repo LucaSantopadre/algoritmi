@@ -1,76 +1,63 @@
 import random
 from selection import Selection
 from sorting import Sorting
+from selection.Selection import trivialSelect
 import math
 from writeOnCsv import write
 
 
 # SAMPLEMEDIANSELECT ---------------------------------------------------------------------------------------------------
 # Sceglie il pivot su cui partizionare
-def sampleMedianSelect(A,left,right, m):
-    # @param A : int list[] ; lista di elementi
-    # @param left: int      ; indice di start sottoinsieme lista
-    # @param right: int     ; indice di end sottoinsieme lista
-    # @param m: int         ; grandezza del sottoinsieme V
-    # @return int           ; elemento mediano del sottoinsieme V
+def sampleMedianSelect(l, k, minLen, m):
+    if k <= 0 or k > len(l):
+        return None
+    return recursiveSampleMedianSelect(l, 0, len(l) - 1, k, minLen, m)
 
-    # prendo sottoinsieme V di  num elementi <=m
+
+def recursiveSampleMedianSelect(l, left, right, k, minLen, m):
+    if left == right:
+        return l[left]
+
+    # si usa stop per decidere quando smettere di ricorrere ed utilizzare un algoritmo diverso
+    if len(l) < minLen:
+        med = trivialSelect(l[left: right + 1], k - left)
+        return med
+
+    # prendo sottoinsieme V di  num elementi <= m
     numElements = m
     while(numElements > right-left+1):
         numElements -= 1
-    V = random.sample(A[left:right+1],numElements)
+    V = random.sample(l[left:right+1], numElements)
 
-    return Selection.trivialSelect(V,numElements//2)
+    vperno = trivialSelect(V,math.ceil(len(V) / 2))
 
+    perno = partitionDet(l, left, right, vperno)  # Watch: this is a new function which takes the pivot as the parameter
+
+    posperno = perno + 1
+    if posperno == k:
+        return l[perno]
+    if posperno > k:
+        return recursiveSampleMedianSelect(l, left, perno - 1, k, minLen, m)
+    else:
+        return recursiveSampleMedianSelect(l, perno + 1, right, k, minLen, m)
 # END SAMPLE_MEDIAN_SELECT ---------------------------------------------------------------------------------------------
 
 
-# QUICKSORT ------------------------------------------------------------------------------------------------------------
-
-def quickSortProject(l, case = 0):
-    recursiveQuickSort(l, 0, len(l) - 1, case)
-
-
-def recursiveQuickSort(l, left, right, case):
-    if left >= right:
-        return
-    pivot = partitionByValue(l, left, right, case)
-    recursiveQuickSort(l, left, pivot - 1, case)
-    recursiveQuickSort(l, pivot + 1, right, case)
-
-# END QUICKSORT --------------------------------------------------------------------------------------------------------
-
-
-#  PARTITION -----------------------------------------------------------------------------------------------------------
-#  modificata nella scelta del pivot tramite algoritmi di selezione :
-#    - algoritmi di selezione , ritornando l'elemento!!  non ho informazione sulla chiave
-#    - utilizzeremo un indice per memorizzare la chiave del pivot quando incontrata nella scansione
-
-def partitionByValue(l, left, right, case):
+# Non ho informazioni sulla chiave, quindi devo scorrere la lista e cercare quando trovo elemento == pivot
+# PARTITION_DET --------------------------------------------------------------------------------------------------------
+def partitionDet(l, left, right, pivot):
+    #nota: pivot è un valore dell'array l e non un indice!
     inf = left
     sup = right
-    dim = right - left + 1
-    k   = math.ceil(dim / 2)   # parametro k del select
-    #k = random.choice(range(left+1,right+1))
-    m   = 5
 
-    if(case == 1):
-        pivot = Selection.quickSelectRand(l[left:right+1], k)
-    elif(case == 2):
-        pivot = Selection.quickSelectDet(l[left:right+1], k, 1)
-    else:
-        pivot = sampleMedianSelect(l, left, right, m)
-
-    indexPivot = None   # utilizzato per mantenere la chiave del pivot quando incontrato nella scansione
     while True:
+        while inf <= right and l[inf] <= pivot:
+            if l[inf] == pivot and l[left] != pivot:
+                l[left], l[inf] = l[inf], l[left]
+            else:
+                inf += 1
 
-        while inf < right and l[inf] <= pivot:
-            # se scorrendo da sinistra a destra trovo un valore uguale al pivot, memorizzo l'indice del valore trovato
-            if(l[inf]== pivot):
-                indexPivot = inf
-            inf += 1
-
-        while  l[sup] > pivot:
+        while sup >= 0 and l[sup] > pivot:
             sup -= 1
 
         if inf < sup:
@@ -78,13 +65,45 @@ def partitionByValue(l, left, right, case):
         else:
             break
 
-    # se nella scansione di partitionByValue trovo un valore uguale al pivot
-    # lo scambio con il sup e ritorno la chiave del pivot trovato
-    if(indexPivot != None):
-        l[indexPivot],l[sup]= l[sup],l[indexPivot]
-    return sup
+    l[left], l[sup] = l[sup], l[left]
 
-#  END PARTITION -------------------------------------------------------------------------------------------------------
+    return sup
+# END PARTITION_DET ----------------------------------------------------------------------------------------------------
+
+
+
+
+
+# QUICKSORT ------------------------------------------------------------------------------------------------------------
+# @param case: int    ; (Default) = sampleMedianSelect    1 = quickSelectRandom     2 = quickSelectDet
+def quickSortProject(l, case = 0):
+    recursiveQuickSort(l, 0, len(l) - 1, case)
+
+
+def recursiveQuickSort(l, left, right, case):
+    if left >= right:
+        return
+    dim = right - left + 1
+    k = math.ceil(dim / 2)
+    m = 1
+    minLen = 10
+
+    if (case == 1):
+        valPivot = Selection.quickSelectRand(l[left:right + 1], k)
+    elif (case == 2):
+        valPivot = Selection.quickSelectDet(l[left:right + 1], k, 1)
+    else:
+        valPivot = sampleMedianSelect(l[left:right + 1], k, minLen, m)
+
+    # utilizzo partitionDet dato che non ho informazioni sulla chiave
+    # algoritmi di select ritornano il valore del pivot
+    pivot = partitionDet(l, left, right, valPivot)
+    recursiveQuickSort(l, left, pivot - 1, case)
+    recursiveQuickSort(l, pivot + 1, right, case)
+
+# END QUICKSORT --------------------------------------------------------------------------------------------------------
+
+
 
 
 #l=[1,20,3,4,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
@@ -93,9 +112,17 @@ def partitionByValue(l, left, right, case):
 #a.sort()
 #print(a)
 #l=[1,20,3,44,5,6,70,8,99,10,110,12,14,140,1555]
-l=[3,4,5,6,6,6,3]
-quickSortProject(l,2)
-print(l)
+#l=[3,4,5,6,6,6,3]
+#quickSortProject(l,0)
+#print(l)
+
+
+#l= [1,2,3,4,5,6,7,8,9]
+#val=sampleMedianSelect(l,math.ceil(len(l) / 2),5 ,5)
+#print(val)
+#Sorting.insertionSortUp(l)
+#print(l)
+#print(l[len(l) // 2])
 
 
 

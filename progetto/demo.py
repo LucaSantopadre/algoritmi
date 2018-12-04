@@ -29,7 +29,7 @@ if __name__ == "__main__":
     # Inizializzazione
     inputType = 0                    # 1 = lista ordinata crescentemente / -1 = lista ordinata decresentemente / 0 = lista generata casualmente / 2 = lista di tutti elementi uguali
 
-    numElements = 75000
+    numElements = 1000000
     slowAlgorithms = False
     flagWrite = False
 
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     print("heapSort required {} seconds.".format(runningTime))
 
 
-
+    """
     base = 400
     runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
     if flagWrite: write("../progetto/results/radixBase400.csv", [[numElements, runningTime]])
@@ -147,3 +147,5 @@ if __name__ == "__main__":
     runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
     if flagWrite: write("../progetto/results/radixBase2.csv", [[numElements, runningTime]])
     print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))
+    
+    """
