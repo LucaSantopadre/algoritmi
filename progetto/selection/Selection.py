@@ -244,9 +244,9 @@ if __name__ == '__main__':
     k = 5
     l = list(basel)
     print(l)
-    # print(trivialSelect(l,k))
+    print(trivialSelect(l,k))
     # print(sortSelect(l, k))
     # print(heapSelect(l, k))
     # print(quickSelectRand(l, k))
-    print(quickSelectDet(l, k, 3))
+    # print(quickSelectDet(l, k, 3))
     print(l)

@@ -2,7 +2,7 @@
 import time
 import random
 from progetto.quickSampleMedianSelect import quickSortProject as Sort
-import sorting.Sorting as Sorting
+from progetto.sorting import Sorting
 from progetto.writeOnCsv import write
 
 
@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
     numElements = 75000
     slowAlgorithms = False
-    flagWrite = True
+    flagWrite = False
 
     print(f"\n\nTEST PERFORMED ON A LIST OF {numElements} ELEMENTS\n\nslowAlgorithms = {slowAlgorithms}\n")
 

@@ -1,8 +1,9 @@
 import random
-from lezioni_selection import Selection
+from progetto.selection import Selection
+from progetto.sorting import Sorting
 import math
 from progetto.writeOnCsv import write
-from lezioni_sorting import Sorting
+
 
 # SAMPLEMEDIANSELECT ---------------------------------------------------------------------------------------------------
 # Sceglie il pivot su cui partizionare

@@ -17,7 +17,7 @@ from time import time
 import math
 
 # Global parameters
-amount = 20
+amount = 10000
 k = int(amount / 2)
 position = math.ceil(amount / 2)
 trivial = False
