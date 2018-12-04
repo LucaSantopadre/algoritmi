@@ -1,5 +1,3 @@
-import csv
-
 def write(fileName, data):
     with open(fileName,'a') as writeFile:
         for row in data:

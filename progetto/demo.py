@@ -1,12 +1,12 @@
 
 import time
 import random
-from progetto.quickSampleMedianSelect import quickSortProject as Sort
-from progetto.sorting import Sorting
-from progetto.writeOnCsv import write
+from quickSampleMedianSelect import quickSortProject as Sort
+from sorting import Sorting
+from writeOnCsv import write
 
 
-def sortingTest(*params):               # *params ==
+def sortingTest(*params):               # *params == lista di parametri
 
     l = list(params[0])
     numParams = len(params)

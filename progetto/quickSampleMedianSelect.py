@@ -1,8 +1,8 @@
 import random
-from progetto.selection import Selection
-from progetto.sorting import Sorting
+from selection import Selection
+from sorting import Sorting
 import math
-from progetto.writeOnCsv import write
+from writeOnCsv import write
 
 
 # SAMPLEMEDIANSELECT ---------------------------------------------------------------------------------------------------
