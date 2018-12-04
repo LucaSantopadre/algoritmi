@@ -3,6 +3,7 @@ import time
 import random
 from progetto.quickSampleMedianSelect import quickSortProject as Sort
 import sorting.Sorting as Sorting
+from progetto.writeOnCsv import write
 
 
 def sortingTest(*params):               # *params ==
@@ -28,9 +29,9 @@ if __name__ == "__main__":
     # Inizializzazione
     inputType = 0                    # 1 = lista ordinata crescentemente / -1 = lista ordinata decresentemente / 0 = lista generata casualmente / 2 = lista di tutti elementi uguali
 
-    numElements = 10000
+    numElements = 75000
     slowAlgorithms = False
-
+    flagWrite = True
 
     print(f"\n\nTEST PERFORMED ON A LIST OF {numElements} ELEMENTS\n\nslowAlgorithms = {slowAlgorithms}\n")
 
@@ -61,21 +62,22 @@ if __name__ == "__main__":
 
 
 
+
     print(inputList)
     print("\n\n -- LIST CREATED --")
 
     print("\n\n-------------- EXECUTION TIME -------------------")
     runningTime = sortingTest(inputList, Sort)
+    if flagWrite : write("../progetto/results/quickSampleMedianSelect.csv",[[numElements,runningTime]])
     print("QuickSort with sampleMedianSelect required {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sort, 1)
+    if flagWrite: write("../progetto/results/quickWithSelectRand.csv", [[numElements, runningTime]])
     print("QuickSort with quickSelectRand required {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sort, 2)
+    if flagWrite: write("../progetto/results/quickWithSelectDet.csv", [[numElements, runningTime]])
     print("QuickSort with quickSelectDet required {} seconds.".format(runningTime))
-
-    # runningTime = sortingTest(inputList, Sort.quickSortConSelectDeterministo)
-    # print("QuickSort with quickSelectDet required {} seconds.".format(runningTime))
     print("-------------------------------------------\n\n")
 
 
@@ -84,12 +86,19 @@ if __name__ == "__main__":
 
     if slowAlgorithms:
         runningTime = sortingTest(inputList, Sorting.selectionSort)
+        if flagWrite: write("../progetto/results/selectionSort.csv", [[numElements, runningTime]])
         print("selectionSort required {} seconds.".format(runningTime))
+
         runningTime = sortingTest(inputList, Sorting.insertionSortUp)
+        if flagWrite: write("../progetto/results/insertionSortUp.csv", [[numElements, runningTime]])
         print("insertionSortUp required {} seconds.".format(runningTime))
+
         runningTime = sortingTest(inputList, Sorting.insertionSortDown)
+        if flagWrite: write("../progetto/results/insertionSortDown.csv", [[numElements, runningTime]])
         print("insertionSortDown required {} seconds.".format(runningTime))
+
         runningTime = sortingTest(inputList, Sorting.bubbleSort)
+        if flagWrite: write("../progetto/results/bubbleSort.csv", [[numElements, runningTime]])
         print("bubbleSort required {} seconds.".format(runningTime))
 
         print('\n')
@@ -97,34 +106,44 @@ if __name__ == "__main__":
 
 
     runningTime = sortingTest(inputList, Sorting.quickSortIter, True)
+    if flagWrite: write("../progetto/results/quickSortIterDet.csv", [[numElements, runningTime]])
     print("quickSortIter-Det required  {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sorting.quickSortIter)
+    if flagWrite: write("../progetto/results/quickSortIterNonDet.csv", [[numElements, runningTime]])
     print("quickSortIter-NonDet required  {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sorting.quickSort, True)
+    if flagWrite: write("../progetto/results/quickSortRecDet.csv", [[numElements, runningTime]])
     print("quickSort(Rec)-Det required    {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sorting.quickSort)
+    if flagWrite: write("../progetto/results/quickSortRecNonDet.csv", [[numElements, runningTime]])
     print("quickSort(Rec)-NonDet required {} seconds.".format(runningTime))
     print('')
     runningTime = sortingTest(inputList, Sorting.mergeSort)
+    if flagWrite: write("../progetto/results/mergeSort.csv", [[numElements, runningTime]])
     print("mergeSort required {} seconds.".format(runningTime))
     print('')
     runningTime = sortingTest(inputList, Sorting.heapSort)
+    if flagWrite: write("../progetto/results/heapSort.csv", [[numElements, runningTime]])
     print("heapSort required {} seconds.".format(runningTime))
 
 
 
     base = 400
     runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
+    if flagWrite: write("../progetto/results/radixBase400.csv", [[numElements, runningTime]])
     print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))
     base = 100
     runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
+    if flagWrite: write("../progetto/results/radixBase100.csv", [[numElements, runningTime]])
     print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))
     base = 10
     runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
+    if flagWrite: write("../progetto/results/radixBase10.csv", [[numElements, runningTime]])
     print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))
     base = 2
     runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
+    if flagWrite: write("../progetto/results/radixBase2.csv", [[numElements, runningTime]])
     print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))

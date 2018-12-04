@@ -1,6 +1,7 @@
 import random
 from lezioni_selection import Selection
 import math
+from progetto.writeOnCsv import write
 from lezioni_sorting import Sorting
 
 # SAMPLEMEDIANSELECT ---------------------------------------------------------------------------------------------------
