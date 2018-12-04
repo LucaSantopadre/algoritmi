@@ -8,7 +8,7 @@ import numpy as np
 def plot():
 
     #names = ["avl"]#, "binaryTree", "list", "hashTableColl", "hashTableOpen"] #filenames
-    names = ["quickSampleMedianSelect"]
+    names = ["quickSampleMedianSelect","quickSortNonDet"]
 
     c = 0       #color
     for alg in names:

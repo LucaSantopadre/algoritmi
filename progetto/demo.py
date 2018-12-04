@@ -1,19 +1,17 @@
-# coding: utf-8 
 
-from time import time
+import time
 import random
-from sorting.__init__ import printSwitch
-import progetto.quickSampleMedianSelect as Sort
-import lezioni_sorting.Sorting as Sorting
-import math
+from progetto.quickSampleMedianSelect import quickSortProject as Sort
+import sorting.Sorting as Sorting
 
 
-def sortingTest(*params):
-    l = list(params[0])  # copy the list. Equivalent to l=input[:].
+def sortingTest(*params):               # *params ==
+
+    l = list(params[0])
     numParams = len(params)
     sortingFunction = params[1]
 
-    start = time()
+    start = time.time()
 
     if numParams == 4:
         sortingFunction(l, params[2], params[3])
@@ -22,37 +20,62 @@ def sortingTest(*params):
     else:
         sortingFunction(l)
 
-    # print(l)     # TO PRINT ORDERED LIST
-    return time() - start
+
+    return (time.time() - start)
 
 
 if __name__ == "__main__":
-    # Inizializzazione ----- SORT
-    inputType = 0  # 1 crescente, -1 decrescente, 0 random
-    steps = 1000000
+    # Inizializzazione
+    inputType = 0                    # 1 = lista ordinata crescentemente / -1 = lista ordinata decresentemente / 0 = lista generata casualmente / 2 = lista di tutti elementi uguali
+
+    numElements = 10000
     slowAlgorithms = False
 
 
+    print(f"\n\nTEST PERFORMED ON A LIST OF {numElements} ELEMENTS\n\nslowAlgorithms = {slowAlgorithms}\n")
 
-    # crea lista
-    inputList = [None] * steps
-    for i in range(0, steps):
+    choise = {0: "Random List", 1: "Increasing List", -1: "Decreasing List", 2: "List of only '0'"}
+    for i in choise.keys():
+        if i == inputType:
+            print("inputType: {}".format(choise[i]))
+            break
+
+
+    print("\n-- LIST CREATION --\n\n")
+
+
+    inputList = [None] * numElements
+
+    for i in range(0, numElements):
         if inputType == 1:
             inputList[i] = i
         elif inputType == -1:
-            inputList[i] = steps - i
+            inputList[i] = numElements - i
         elif inputType == 0:
-            inputList[i] = random.randint(0, steps)
+            inputList[i] = random.randint(0, numElements)
+        elif inputType == 2:
+            inputList[i] = 0
         else:
             raise Exception("You used an invalid inputType parameter!")
-    printSwitch.dumpOperations = False
+
+
 
 
     print(inputList)
+    print("\n\n -- LIST CREATED --")
 
-    print("\n\n-------------- PROGETTO -------------------")
-    runningTime = sortingTest(inputList, Sort.quickSortProject)
-    print("PROGETTO: quickSort with sampleMedianSelect required {} seconds.".format(runningTime))
+    print("\n\n-------------- EXECUTION TIME -------------------")
+    runningTime = sortingTest(inputList, Sort)
+    print("QuickSort with sampleMedianSelect required {} seconds.".format(runningTime))
+
+    runningTime = sortingTest(inputList, Sort, 1)
+    print("QuickSort with quickSelectRand required {} seconds.".format(runningTime))
+
+    runningTime = sortingTest(inputList, Sort, 2)
+    print("QuickSort with quickSelectDet required {} seconds.".format(runningTime))
+
+    # runningTime = sortingTest(inputList, Sort.quickSortConSelectDeterministo)
+    # print("QuickSort with quickSelectDet required {} seconds.".format(runningTime))
     print("-------------------------------------------\n\n")
 
 
@@ -71,8 +94,10 @@ if __name__ == "__main__":
 
         print('\n')
 
+
+
     runningTime = sortingTest(inputList, Sorting.quickSortIter, True)
-    print("quickSortIter-Det required     {} seconds.".format(runningTime))
+    print("quickSortIter-Det required  {} seconds.".format(runningTime))
 
     runningTime = sortingTest(inputList, Sorting.quickSortIter)
     print("quickSortIter-NonDet required  {} seconds.".format(runningTime))
@@ -89,20 +114,17 @@ if __name__ == "__main__":
     runningTime = sortingTest(inputList, Sorting.heapSort)
     print("heapSort required {} seconds.".format(runningTime))
 
-    """
-    print("\n\nradix")
+
 
     base = 400
-    runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
-    print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
+    runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
+    print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))
     base = 100
-    runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
-    print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
+    runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
+    print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))
     base = 10
-    runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
-    print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
+    runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
+    print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))
     base = 2
-    runningTime = sortingTest(inputList, Sorting.radixSort, steps, base)
-    print("radixSort({},{}) required {} seconds.".format(steps, base, runningTime))
-    
-    """
+    runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
+    print("radixSort({},{}) required {} seconds.".format(numElements, base, runningTime))
