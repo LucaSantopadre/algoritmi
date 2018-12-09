@@ -29,9 +29,9 @@ def recursiveSampleMedianSelect(l, left, right, k, minLen, m):
         numElements -= 1
     V = random.sample(l[left:right+1], numElements)
 
-    vperno = trivialSelect(V,math.ceil(len(V) / 2))
+    vperno = trivialSelect(V,math.ceil(len(V) / 2))   # trova mediano di V            O(m)
 
-    perno = partitionDet(l, left, right, vperno)  # Watch: this is a new function which takes the pivot as the parameter
+    perno = partitionDet(l, left, right, vperno)  #  O(n)   Watch: this is a new function which takes the pivot as the parameter
 
     posperno = perno + 1
     if posperno == k:
@@ -85,8 +85,8 @@ def recursiveQuickSort(l, left, right, case):
         return
     dim = right - left + 1
     k = math.ceil(dim / 2)
-    m = 1
-    minLen = 10
+    m = 3
+    minLen = 5
 
     if (case == 1):
         valPivot = Selection.quickSelectRand(l[left:right + 1], k)
@@ -98,15 +98,15 @@ def recursiveQuickSort(l, left, right, case):
     # utilizzo partitionDet dato che non ho informazioni sulla chiave
     # algoritmi di select ritornano il valore del pivot
     pivot = partitionDet(l, left, right, valPivot)
-    recursiveQuickSort(l, left, pivot - 1, case)
-    recursiveQuickSort(l, pivot + 1, right, case)
 
+    recursiveQuickSort(l, left, pivot - 1 , case)
+    recursiveQuickSort(l, pivot + 1, right, case)
 # END QUICKSORT --------------------------------------------------------------------------------------------------------
 
 
 
 
-#l=[1,20,3,4,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
+l=[1,20,3,4,6,70,8,9,10,110,12,13,14,3,213,541,52,5,3,643324,1234321,6,454,42,13,214231423,5,6,7,8,1]
 #l=[1,20,3,44,5,6,70,8,99,10,110,12,14,140,1555]
 #a=l
 #a.sort()
@@ -117,11 +117,14 @@ def recursiveQuickSort(l, left, right, case):
 #print(l)
 
 
+
 #l= [1,2,3,4,5,6,7,8,9]
+#print(l)
 #val=sampleMedianSelect(l,math.ceil(len(l) / 2),5 ,5)
 #print(val)
 #Sorting.insertionSortUp(l)
 #print(l)
+#print(l[math.ceil(len(l) / 2) - 1])
 #print(l[len(l) // 2])
 
 

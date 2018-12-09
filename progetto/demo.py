@@ -2,8 +2,10 @@
 import time
 import random
 from quickSampleMedianSelect import quickSortProject as Sort
+import quickSampleMedianSelect
 from sorting import Sorting
 from writeOnCsv import write
+import math
 
 
 def sortingTest(*params):               # *params == lista di parametri
@@ -14,7 +16,9 @@ def sortingTest(*params):               # *params == lista di parametri
 
     start = time.time()
 
-    if numParams == 4:
+    if numParams == 5:
+        sortingFunction(l, params[2], params[3], params[4])
+    elif numParams == 4:
         sortingFunction(l, params[2], params[3])
     elif numParams == 3:
         sortingFunction(l, params[2])
@@ -29,7 +33,7 @@ if __name__ == "__main__":
     # Inizializzazione
     inputType = 0                    # 1 = lista ordinata crescentemente / -1 = lista ordinata decresentemente / 0 = lista generata casualmente / 2 = lista di tutti elementi uguali
 
-    numElements = 1000000
+    numElements = 10000
     slowAlgorithms = False
     flagWrite = False
 
@@ -61,10 +65,18 @@ if __name__ == "__main__":
 
 
 
+    dimension = len(inputList)
 
 
     print(inputList)
     print("\n\n -- LIST CREATED --")
+
+
+    print("\n\n-------------- SAMPLE MEDIAN SELECT -------------------")
+    runningTime = sortingTest(inputList, quickSampleMedianSelect.sampleMedianSelect, math.ceil(dimension / 2), 10, 3)
+    print("Only sampleMedianSelect required {} seconds.".format(runningTime))
+    print("-------------------------------------------\n\n")
+
 
     print("\n\n-------------- EXECUTION TIME -------------------")
     runningTime = sortingTest(inputList, Sort)
@@ -129,8 +141,8 @@ if __name__ == "__main__":
     if flagWrite: write("../progetto/results/heapSort.csv", [[numElements, runningTime]])
     print("heapSort required {} seconds.".format(runningTime))
 
-
     """
+    
     base = 400
     runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
     if flagWrite: write("../progetto/results/radixBase400.csv", [[numElements, runningTime]])
