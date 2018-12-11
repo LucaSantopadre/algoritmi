@@ -6,7 +6,7 @@ import numpy as np
 
 def plot():
     #names = ["quickSampleMedianSelect","heapSort","mergeSort","quickSortRedDet","quickSortRecNonDet"]
-    names = ["quickSampleMedianSelect","quickWithSelectDet","quickWithSelectRand"]
+    names = ["quickSampleMedianSelect","quickWithSelectDet","quickWithSelectRand","quickSortRecDet","quickSortRecNonDet","quickSortIterDet","quickSortIterNonDet"]
 
 
     c = 0       #color

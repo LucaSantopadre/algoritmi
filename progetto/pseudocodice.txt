@@ -1,27 +1,9 @@
-algorithm sampleMedianSelect(list, left, right, m) --->  int elem
+algorithm sampleMedianSelect(list, k, minLen, m) --->  int elem
     V = m random elements from  list[left:right]              O(m)
     return mediano di V                                       O(?)  m ??
 
 
-algorithm partitionByValue(list, left, right) ---> int key
-    inf = left
-    sup = right
+algorithm quickSortProject(list, left, right)---> None
+    valuePivot = sampleMedianSelect(l[left:right] , )
 
-    pivot = select pivot from Select Algorithm
 
-    indexPivot = None
-    while(True) do
-        # scorro da sinista
-        while(inf < right and list[inf] <= pivot)
-            inf = inf + 1
-            if( A[inf] == pivot)  then   indexPivot = A[inf]   # Trovato indice pivot!
-
-        # scorro da destra
-        while(list[sup] > pivot)
-            sup = sup - 1
-
-         if(inf < sup)  then    scambia list[inf] e list[sup]
-         else break
-
-     if(indexPivot != None)   then   scambia list[indexPivot]  e list[sup]
-     return sup

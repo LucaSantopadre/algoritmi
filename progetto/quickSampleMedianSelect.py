@@ -4,6 +4,7 @@ from sorting import Sorting
 from selection.Selection import trivialSelect
 import math
 from writeOnCsv import write
+import sort_3
 
 
 # SAMPLEMEDIANSELECT ---------------------------------------------------------------------------------------------------
@@ -29,7 +30,10 @@ def recursiveSampleMedianSelect(l, left, right, k, minLen, m):
         numElements -= 1
     V = random.sample(l[left:right+1], numElements)
 
-    vperno = trivialSelect(V,math.ceil(len(V) / 2))   # trova mediano di V            O(m)
+    #vperno = trivialSelect(V,math.ceil(len(V) / 2))   # trova mediano di V            O(m)
+
+    vperno = sort_3.sort_3(V)
+
 
     perno = partitionDet(l, left, right, vperno)  #  O(n)   Watch: this is a new function which takes the pivot as the parameter
 
