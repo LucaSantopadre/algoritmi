@@ -34,14 +34,14 @@ def sortingTest(*params):               # *params == lista di parametri
 
 if __name__ == "__main__":
     # Inizializzazione
-    inputType = 0                   # 1 = lista ordinata crescentemente / -1 = lista ordinata decresentemente / 0 = lista generata casualmente / 2 = lista di tutti elementi uguali
+    inputType = -1                   # 1 = lista ordinata crescentemente / -1 = lista ordinata decresentemente / 0 = lista generata casualmente / 2 = lista di tutti elementi uguali
 
-    MAX   = 71000
-    START = 70000
+    MAX   = 20000
+    START = 10000
     STEP  = 1000
 
     slowAlgorithms = False
-    flagWrite = False
+    flagWrite = True
 
 
     choice = {0: "Random List", 1: "Increasing List", -1: "Decreasing List", 2: "List of only '0'"}
@@ -127,17 +127,17 @@ if __name__ == "__main__":
 
 
 
-        runningTime = sortingTest(inputList, Sorting.quickSortIter, True)
-        if flagWrite: write("../progetto/results/quickSortIterDet.csv", [[numElements, runningTime]])
-        print("quickSortIter-Det required  {} seconds.".format(runningTime))
+        #runningTime = sortingTest(inputList, Sorting.quickSortIter, True)
+        #if flagWrite: write("../progetto/results/quickSortIterDet.csv", [[numElements, runningTime]])
+        #print("quickSortIter-Det required  {} seconds.".format(runningTime))
 
         runningTime = sortingTest(inputList, Sorting.quickSortIter)
         if flagWrite: write("../progetto/results/quickSortIterNonDet.csv", [[numElements, runningTime]])
         print("quickSortIter-NonDet required  {} seconds.".format(runningTime))
 
-        runningTime = sortingTest(inputList, Sorting.quickSort, True)
-        if flagWrite: write("../progetto/results/quickSortRecDet.csv", [[numElements, runningTime]])
-        print("quickSort(Rec)-Det required    {} seconds.".format(runningTime))
+        #runningTime = sortingTest(inputList, Sorting.quickSort, True)
+        #if flagWrite: write("../progetto/results/quickSortRecDet.csv", [[numElements, runningTime]])
+        #print("quickSort(Rec)-Det required    {} seconds.".format(runningTime))
 
         runningTime = sortingTest(inputList, Sorting.quickSort)
         if flagWrite: write("../progetto/results/quickSortRecNonDet.csv", [[numElements, runningTime]])
