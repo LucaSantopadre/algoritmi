@@ -34,14 +34,14 @@ def sortingTest(*params):               # *params == lista di parametri
 
 if __name__ == "__main__":
     # Inizializzazione
-    inputType = 1                    # 1 = lista ordinata crescentemente / -1 = lista ordinata decresentemente / 0 = lista generata casualmente / 2 = lista di tutti elementi uguali
+    inputType = 0                   # 1 = lista ordinata crescentemente / -1 = lista ordinata decresentemente / 0 = lista generata casualmente / 2 = lista di tutti elementi uguali
 
-    MAX = 10000
-    START = 1000
-    STEP = 500
+    MAX   = 71000
+    START = 70000
+    STEP  = 1000
 
     slowAlgorithms = False
-    flagWrite = True
+    flagWrite = False
 
 
     choice = {0: "Random List", 1: "Increasing List", -1: "Decreasing List", 2: "List of only '0'"}

@@ -1,21 +1,26 @@
-algorithm sampleMedianSelect(list, k, minLen) --->  int elem
-    m = 3
+// -----------------------------------------------------------------------
+algoritmo sampleMedianSelect(list, k, minLen) --->  int elem
+    if(|list| <= minLen) then
+        ordina list
+        return k-esimo elemento di list
 
-    V = m random elements from  list              O(m)
-    median = mediano di V                         mediano di 3 elementi!
+    m = 3
+    V = sottoinsieme di m elementi random da list
+    median = mediano di V
 
     partiziona list rispetto a median :
-        l1 = { y € A : y<median}
-        l2 = { y € A : y=median}
-        l3 = { y € A : y>median}
+        list1 = { y € list : y < median}
+        list2 = { y € list : y = median}
+        list3 = { y € list : y > median}
 
-     if(k <= |l1|))  then return sampleMedianSelect(l1, k, minLen)
-     else  if ( k > |l1| + |l2|)  the return sampleMedianSelect(l3, k-|l1|-|l2|, minLen)
-
+     if(k <= |list1|))  then return sampleMedianSelect(list1, k, minLen)
+     else  if ( k > |list1| + |list2|)  then return sampleMedianSelect(l3, k-|list1|-|list2|, minLen)
      else return median
+// --------------------------------------------------------------------------
 
 
-algorithm quickSortProject(list, left, right)---> None
-    valuePivot = sampleMedianSelect(l[left:right] , )
-
+analisi sampleMedianSelect :
+    - trova mediano di V di m elementi      c
+    - partiziona list                       O(n)
+    - vai ricorsivamente sulla partizione giusta con numero di elementi almeno = n-2  ( escludo 2 elementi (elemento + mediano di V))
 

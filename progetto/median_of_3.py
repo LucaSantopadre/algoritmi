@@ -1,4 +1,6 @@
-def sort_3(a):
+
+# trovo il mediano con al più 3 confronti
+def median3(a):
     if len(a)<= 2:
         if a[0] > a[1]:
             a[0] , a[1] = a[1], a[0]
