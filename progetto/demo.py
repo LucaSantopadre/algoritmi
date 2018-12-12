@@ -12,7 +12,8 @@ def sortingTest(*params):               # *params == lista di parametri
 
     l = list(params[0])
     numParams = len(params)
-    sortingFunction = params[1]
+    if numParams > 1 :
+        sortingFunction = params[1]
 
     start = time.time()
 
@@ -22,6 +23,8 @@ def sortingTest(*params):               # *params == lista di parametri
         sortingFunction(l, params[2], params[3])
     elif numParams == 3:
         sortingFunction(l, params[2])
+    elif numParams == 1:
+        l.sort()
     else:
         sortingFunction(l)
 
@@ -36,6 +39,9 @@ if __name__ == "__main__":
     #numElements = 50000
 
     MAX = 110000
+    START = 100000
+    STEP = 10000
+
     slowAlgorithms = False
     flagWrite = True
 
@@ -46,7 +52,7 @@ if __name__ == "__main__":
             print("inputType: {}".format(choice[i]))
             break
 
-    for numElements in range(100000,MAX,10000):
+    for numElements in range(START,MAX,STEP):
 
         print(f"\n\nTEST PERFORMED ON A LIST OF {numElements} ELEMENTS\n\nslowAlgorithms = {slowAlgorithms}\n")
         print("\n-- LIST CREATION --\n\n")
@@ -74,6 +80,7 @@ if __name__ == "__main__":
         print(inputList)
         print("\n\n -- LIST CREATED --")
 
+        """
 
         print("\n\n-------------- SAMPLE MEDIAN SELECT -------------------")
         runningTime = sortingTest(inputList, quickSampleMedianSelect.sampleMedianSelect, math.ceil(dimension / 2), 10, 3)
@@ -119,7 +126,7 @@ if __name__ == "__main__":
             print('\n')
 
 
-
+        
         runningTime = sortingTest(inputList, Sorting.quickSortIter, True)
         if flagWrite: write("../progetto/results/quickSortIterDet.csv", [[numElements, runningTime]])
         print("quickSortIter-Det required  {} seconds.".format(runningTime))
@@ -135,7 +142,18 @@ if __name__ == "__main__":
         runningTime = sortingTest(inputList, Sorting.quickSort)
         if flagWrite: write("../progetto/results/quickSortRecNonDet.csv", [[numElements, runningTime]])
         print("quickSort(Rec)-NonDet required {} seconds.".format(runningTime))
+        
+        """
+
         print('')
+
+        runningTime = sortingTest(inputList)
+        if flagWrite: write("../progetto/results/pythonSort.csv", [[numElements, runningTime]])
+        print("pythonSort required {} seconds.".format(runningTime))
+
+
+        """
+
         runningTime = sortingTest(inputList, Sorting.mergeSort)
         if flagWrite: write("../progetto/results/mergeSort.csv", [[numElements, runningTime]])
         print("mergeSort required {} seconds.".format(runningTime))
@@ -144,7 +162,7 @@ if __name__ == "__main__":
         if flagWrite: write("../progetto/results/heapSort.csv", [[numElements, runningTime]])
         print("heapSort required {} seconds.".format(runningTime))
 
-        """
+
         
         base = 400
         runningTime = sortingTest(inputList, Sorting.radixSort, numElements, base)
