@@ -18,9 +18,3 @@ algoritmo sampleMedianSelect(list, k, minLen) --->  int elem
      else return median
 // --------------------------------------------------------------------------
 
-
-analisi sampleMedianSelect :
-    - trova mediano di V di m elementi      c
-    - partiziona list                       O(n)
-    - vai ricorsivamente sulla partizione giusta con numero di elementi almeno = n-2  ( escludo 2 elementi (elemento + mediano di V))
-
