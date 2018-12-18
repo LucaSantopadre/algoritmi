@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a840516d-8926-4aba-858b-830256074aa3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Algoritmi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Algoritmi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto/selection/demoSelection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto/sorting/demoRandom.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/progetto/sorting/demoSorting.py" beforeDir="false" />
-    </list>
+    <list default="true" id="a840516d-8926-4aba-858b-830256074aa3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,14 +114,15 @@
     <session id="-406135132">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="4" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -149,6 +143,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="20" />
+          <entry key="gitignore" value="1" />
           <entry key="png" value="5" />
           <entry key="py" value="49" />
           <entry key="txt" value="3" />
@@ -158,7 +153,7 @@
         <counts>
           <entry key="CSV" value="15" />
           <entry key="Image" value="5" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="Python" value="49" />
         </counts>
       </usages-collector>
@@ -168,17 +163,7 @@
     <favorites_list name="Algoritmi" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/progetto/sorting/Sorting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -262,17 +247,6 @@
             <path>
               <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
               <item name="algoritmi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmi" type="462c0819:PsiDirectoryNode" />
-              <item name="progetto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algoritmi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algoritmi" type="462c0819:PsiDirectoryNode" />
-              <item name="progetto" type="462c0819:PsiDirectoryNode" />
-              <item name="sorting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -585,9 +559,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.20681818" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.20984848" />
       <window_info id="Structure" order="1" sideWeight="0.5023585" side_tool="true" weight="0.21060605" />
       <window_info id="Favorites" order="2" sideWeight="0.5023585" side_tool="true" weight="0.21060605" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -801,9 +774,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/progetto/results/result.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/progetto/results/result.png" />
     <entry file="file://$PROJECT_DIR$/progetto/pseudocodice.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -822,36 +793,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/progetto/ciccio.csv" />
-    <entry file="file://$PROJECT_DIR$/progetto/results/quickWithSelectRand.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/progetto/results/quickSampleMedianSelect.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="26">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/progetto/sorting/demoSorting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#18#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/progetto/results/quickWithSelectRand.csv" />
+    <entry file="file://$PROJECT_DIR$/progetto/results/quickSampleMedianSelect.csv" />
+    <entry file="file://$PROJECT_DIR$/progetto/sorting/demoSorting.py" />
     <entry file="file://$PROJECT_DIR$/../ingegneria-algoritmi-2018/datastruct/Stack.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -859,9 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding>
-            <marker date="1543932897138" expanded="true" signature="38:43" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,16 +845,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#246#284#0" expanded="true" />
-          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/progetto/sorting/Sorting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
